@@ -69,8 +69,6 @@ html {
 
   /* Screens */
   --mobile-scr: 23.4375rem;
-  --desktop-scr: 48rem;
-  --large-scr: 90rem;
   --desktop: 46rem;
 }
 
@@ -287,7 +285,7 @@ footer {
 }
 
 /* Mobile: 375px and up */
-@media (min-width: var(--mobile-scr)) {
+@media (min-width:  23.4375rem) {
   main {
     max-width: var(--mobile-scr);
     margin: 0 auto;
@@ -303,7 +301,7 @@ footer {
 }
 
 /* Desktop: 768px and up */
-@media (min-width: var(--desktop-scr)) {
+@media (min-width: 48rem) {
   main {
     max-width: var(--desktop);
     border-radius: var(--spacing-15);
@@ -346,7 +344,7 @@ footer {
 }
 
 /* Large screens: 1440px and up */
-@media (min-width: var(--large-scr)) {
+@media (min-width: 90rem) {
   main {
     max-width: var(--desktop);
   }
