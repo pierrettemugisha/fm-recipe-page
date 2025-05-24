@@ -28,6 +28,7 @@ html {
   --brown-800: hsl(14, 45%, 36%);
   --rose-800: hsl(332, 51%, 32%);
   --rose-50: hsl(330, 100%, 98%);
+  --cust-blue: hsl(228, 45%, 44%);
 
   /* Font Sizes */
   --font-size-prime: 0.875rem;
@@ -65,6 +66,12 @@ html {
   --lh-base: 1.6;
   --line-body: 1.4;
   --lh-heading: 1.1;
+
+  /* Screens */
+  --mobile-scr: 23.4375rem;
+  --desktop-scr: 48rem;
+  --large-scr: 90rem;
+  --desktop: 46rem;
 }
 
 body {
@@ -175,7 +182,7 @@ p {
 
 .recipe-ingredients ul {
   list-style: none;
-  margin: none;
+  margin: 0;
 }
 
 .recipe-ingredients li {
@@ -276,13 +283,13 @@ footer {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--cust-blue);
 }
 
 /* Mobile: 375px and up */
-@media (min-width: 375px) {
+@media (min-width: var(--mobile-scr)) {
   main {
-    max-width: 375px;
+    max-width: var(--mobile-scr);
     margin: 0 auto;
   }
 
@@ -296,9 +303,9 @@ footer {
 }
 
 /* Desktop: 768px and up */
-@media (min-width: 768px) {
+@media (min-width: var(--desktop-scr)) {
   main {
-    max-width: 736px;
+    max-width: var(--desktop);
     border-radius: var(--spacing-15);
     margin: var(--spacing-80) auto;
     min-height: auto;
@@ -339,8 +346,8 @@ footer {
 }
 
 /* Large screens: 1440px and up */
-@media (min-width: 1440px) {
+@media (min-width: var(--large-scr)) {
   main {
-    max-width: 736px;
+    max-width: var(--desktop);
   }
 }
